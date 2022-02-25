@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Container, ResultContainer, Button } from './components/styles';
+import { Container, ResultContainer, Button, Option } from './components/styles';
 import { Menu, Alvenaria, Concreto, Informacao} from './components';
 
 
@@ -20,10 +20,10 @@ function App() {
   return (
     <Container>
       <Menu />
-      <div>
+      <Option>
         <Button onClick={calcActive}>Calculo</Button>
         <Button onClick={infoActive}>Info</Button>
-      </div>
+      </Option>
       {hasCalc && (
         <ResultContainer>
           <Alvenaria />

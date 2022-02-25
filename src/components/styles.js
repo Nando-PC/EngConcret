@@ -121,3 +121,9 @@ export const Button = styled.button`
     margin-top: 3px;
     margin-left: 3px;
 `;
+
+export const Option = styled.div`
+    display: flex;
+    justify-content: end;
+    align-items: end;
+`;

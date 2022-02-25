@@ -19,9 +19,9 @@ const Concreto = () => {
             const dAreia = 2.26; // traçoAreia/massaEspAreia -> 6/2.65
             const dAgua = 0.5; // traçoAgua/massaEspecifica -> 0.5/1
             const consumoCimento = argamassa/(dCimento+dAreia+dAgua);
-            setCimento(Number.parseInt(consumoCimento/50));
-            setAreia(Number.parseInt((consumoCimento*6)/1500)); // 1500 = 1,5(areiaUnitário)* 1000(m3)
-            setAgua(Number.parseInt(consumoCimento));
+            setCimento(Number.parseFloat(consumoCimento/50).toFixed(2));
+            setAreia(Number.parseFloat((consumoCimento*6)/1500).toFixed(2)); // 1500 = 1,5(areiaUnitário)* 1000(m3)
+            setAgua(Number.parseFloat(consumoCimento/2).toFixed(2));
     }, [argamassa]);  
 
     
@@ -34,7 +34,7 @@ const Concreto = () => {
     }
 
     function handleClick() {        
-        setArgamassa(Number.parseInt(volume*value));
+        setArgamassa(Number.parseFloat(volume*value).toFixed(2));
                 
     }  
 
