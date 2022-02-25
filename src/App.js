@@ -1,24 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import { Container, ResultContainer, Button } from './components/styles';
+import { Menu, Alvenaria, Concreto, Informacao} from './components';
+
+
 
 function App() {
+  const[hasCalc, setHasCalc] = useState(true);
+  const[hasInfo, setHasInfo] = useState(false);
+
+  function calcActive() {      
+    setHasCalc(true);
+    setHasInfo(false);
+  }
+  function infoActive() {
+    setHasCalc(false);
+    setHasInfo(true);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <Menu />
+      <div>
+        <Button onClick={calcActive}>Calculo</Button>
+        <Button onClick={infoActive}>Info</Button>
+      </div>
+      {hasCalc && (
+        <ResultContainer>
+          <Alvenaria />
+          <Concreto />
+        </ResultContainer>
+      )}
+      {hasInfo && (
+        <Informacao />
+      )}
+    </Container>
   );
 }
 
