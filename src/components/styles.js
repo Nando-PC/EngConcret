@@ -96,7 +96,7 @@ export const InfoContainer = styled.div`
     display: flex;
     flex-direction: column;
     margin-top: 5px;
-    margin-left: 45px;
+    margin-left: 150px;
     margin-bottom: 15px;
     padding: 10px 10px;
     justify-content: start;
