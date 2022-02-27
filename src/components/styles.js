@@ -120,6 +120,7 @@ export const Button = styled.button`
     height: 25px;
     margin-top: 3px;
     margin-left: 3px;
+    cursor: pointer;
 `;
 
 export const Option = styled.div`
