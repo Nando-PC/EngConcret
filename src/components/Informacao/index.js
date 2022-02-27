@@ -32,6 +32,7 @@ const Informacao = () => {
                     <li>Traço da argamassa para assentamento da alvenaria = 1:6 cimento/areia;</li>
                     <li>Para o cálculo do volume de argamassa para alvenaria, e = 1,0cm (espessura da argamassa);</li>
                     <li>Para o cálculo de argamssa colante para revestimento atenta-se ao rendimento</li>
+                    <li>Para cálculo da argamassa colante, Argamassa = 20kg/saco </li>
 
                 </ul>
             </InfoContainer>            
