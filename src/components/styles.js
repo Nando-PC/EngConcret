@@ -66,7 +66,7 @@ export const Result = styled.div`
     width: 350px;
     height: 350px;
     border-radius: 20px;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     font-family: Verdana;
     font-size: 14px;
@@ -116,7 +116,7 @@ export const Button = styled.button`
     border-radius: 3px;
     background-color: green;
     color: #D2CC16;
-    width: 60px;
+    width: 100px;
     height: 25px;
     margin-top: 3px;
     margin-left: 3px;

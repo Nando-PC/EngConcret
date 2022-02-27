@@ -27,10 +27,12 @@ const Informacao = () => {
                 </form>
                 <p>Dimensões da alvenaria selecionada: {dimensao}</p>
                 <ul>Observações: 
-                    <li>Este aplicativo faz uso de Dosagem empírica;</li>
-                    <li>Dimensionamento para alvenaria não-estrutural, ou seja, para vedação;</li>
-                    <li>Traço de assentamento(argamassa) 1:6 cimento/areia;</li>
-                    <li>Para cálculo do volume de argamassa, e = 1,0cm (espessura da argamassa);</li>
+                    <li>Este aplicativo faz uso de Dosagem Empírica;</li>
+                    <li>Dimensionamento para Alvenaria não-estrutural, ou seja, para vedação;</li>
+                    <li>Traço da argamassa para assentamento da alvenaria = 1:6 cimento/areia;</li>
+                    <li>Para o cálculo do volume de argamassa para alvenaria, e = 1,0cm (espessura da argamassa);</li>
+                    <li>Para o cálculo de argamssa colante para revestimento atenta-se ao rendimento</li>
+
                 </ul>
             </InfoContainer>            
         </>
