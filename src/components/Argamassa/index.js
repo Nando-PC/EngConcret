@@ -9,7 +9,7 @@ const Argamassa = () => {
     const[rendimentoTres, setRendimentoTres] = useState(0);
 
     useEffect(() => {
-        setRendimentoTres(Number.parseFloat(value/3).toFixed(1));
+        setRendimentoDois(Number.parseFloat(value/2).toFixed(1));
     }, [value]);
 
     function handleInputValue(e) {
@@ -17,8 +17,8 @@ const Argamassa = () => {
     }
 
     function handleClick(){
-        const calculo = Number.parseFloat(value/2);
-        setRendimentoDois(calculo.toFixed(1));        
+        const calculo = Number.parseFloat(value/3);
+        setRendimentoTres(calculo.toFixed(1));        
     }
 
     return(
@@ -32,8 +32,8 @@ const Argamassa = () => {
                     <input type="button" value="Enviar" style={{ marginTop: '20px' }} />
                 </Formulario>
                 <Estilo>Caixas de Revestimento(caixa=1m²): {value}</Estilo>
-                <Estilo>Sacos de Argamassa(rendimento = 2 m²): {rendimentoDois} </Estilo>
-                <Estilo>Sacos de Argamassa(rendimento = 3 m²): {rendimentoTres} </Estilo> 
+                <Estilo>Sacos de Argamassa(rendimento=2m²): {rendimentoDois} </Estilo>
+                <Estilo>Sacos de Argamassa(rendimento=3m²): {rendimentoTres} </Estilo> 
         </Result>
     )
 }

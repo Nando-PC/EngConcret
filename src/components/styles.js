@@ -2,7 +2,10 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     display: flex;
+    width: 100%;
+    height: 100%;
     flex-direction: column;
+    background-color: #FCFAA5 ;
 `;
 
 export const MenuContainer = styled.div`
@@ -95,8 +98,8 @@ export const Title = styled.span`
 export const InfoContainer = styled.div`
     display: flex;
     flex-direction: column;
+    margin-left: 3vw;
     margin-top: 5px;
-    margin-left: 150px;
     margin-bottom: 15px;
     padding: 10px 10px;
     justify-content: start;
@@ -106,7 +109,7 @@ export const InfoContainer = styled.div`
     font-family: Verdana;
     font-size: 12px;
     color: green;
-    border-radius: 6px;
+    border-radius: 20px;
     background-color: #D2CC16;
 
 `;
