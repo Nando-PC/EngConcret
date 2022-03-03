@@ -131,3 +131,20 @@ export const Option = styled.div`
     justify-content: end;
     align-items: end;
 `;
+
+export const ButtonCusto = styled.button`
+    border: none;
+    border-radius: 3px;
+    background-color: #D2CC16;
+    color: green;
+    width: 110px;
+    height: 25px;
+    margin-top: 3px;
+    margin-left: 3px;
+    cursor: pointer;
+`;
+
+export const Label = styled.label`
+    display: flex;
+    flex-direction: row;
+`;
